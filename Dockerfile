@@ -1,9 +1,11 @@
 FROM wibumylife/wibumylife-ubot:buster
 
-# Clone repo and prepare working directory
-RUN git clone -b master https://github.com/BianSepang/ProjectBish /home/projectbish/
-RUN mkdir /home/projectbish/bin/
-WORKDIR /home/projectbish/
+RUN git clone -b wibumylife-ubot https://github.com/wibumylife/wibumylife-ubot /root/userbot
+RUN mkdir /root/userbot/.bin
+RUN pip install --upgrade pip setuptools
+WORKDIR /root/userbot
 
-# Finalization
-CMD ["python3","-m","userbot"]
+RUN pip3 install -r https://raw.githubusercontent.com/wibumylife/wibumylife-ubot/wibumylife-ubot/requirements.txt
+
+CMD ["python3", "-m", "userbot"]
+
