@@ -28,7 +28,6 @@
     },
     "HEROKU_APP_NAME": {
       "description": "FILL THE VALUE, SAME AS THAT YOU CREATE IN APP NAME!.",
-      "value": "Check Di Heroku Dashboard Mu",
       "required": true
     },
     "HEROKU_API_KEY": {
@@ -45,7 +44,7 @@
     },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module.",
-      "value": "False",
+      "value": "True",
       "required": true
     },
     "ALIVE_NAME": {
@@ -60,6 +59,23 @@
         "version": "12"
       }
     }
+    ],"buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-redis"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+  }, {
+    "url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab"
+  },{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "https://github.com/amivin/aria2-heroku"
+  }, {
+    "url": "https://github.com/stevo550/buildpack-slug-cleaner"
+  }],
   "formation": {
     "worker": {
       "quantity": 1,
