@@ -26,11 +26,6 @@
       "description": "Get this value by running [python3 string_session.py] in Termux or local system.",
       "required": true
     },
-    "HEROKU_MEMEZ": {
-      "description": "This should be True if the userbot is running on a Heroku Dyno.",
-      "value": "True",
-      "required": true
-    },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
       "value": ""
@@ -38,18 +33,6 @@
     "HEROKU_APP_NAME": {
       "description": "FILL THE VALUE, SAME AS THAT YOU CREATE IN APP NAME!.",
       "required": true
-    },
-    "GITHUB_ACCESS_TOKEN": {
-      "description": "Your GITHUB_ACCESS_TOKEN, get it from 'https://github.com/settings/tokens'",
-      "value": ""
-    },
-    "GIT_REPO_NAME": {
-      "description": "Add the GIT_REPO_NAME here. It helps with commit on GitHub.",
-      "required": false
-    },
-    "UPSTREAM_REPO_URL": {
-      "description": "In case you maintain a fork, add your repo URL here.",
-      "required": false
     },
     "COUNTRY": {
       "description": "Set your Country to be used in the .time and .date commands.",
@@ -60,35 +43,13 @@
       "value": "1",
       "required": false
     },
-    "CHROME_DRIVER": {
-      "description": "ChromeDriver location for selenium based modules.",
-      "value": "/usr/bin/chromedriver",
-      "required": false
-    },
-    "GOOGLE_CHROME_BIN": {
-      "description": "Google Chrome (or) Chromium binary location for selenium based modules.",
-      "value": "/usr/bin/chromium-browser",
-      "required": false
-    },
-    "OPEN_WEATHER_MAP_APPID": {
-      "description": "Get your own APPID (API key)from https://api.openweathermap.org/data/2.5/weather",
-      "required": false
-    },
 	"G_BAN_LOGGER_GROUP": {
       "description": "Same as BOTLOG_CHATID. Put your group ID here to enable Gban features.",
       "required": false
     },
-	"TERM_ALIAS": {
-      "description": "Some unique name or else.",
-      "required": true
-    },
     "BOTLOG": {
       "description": "Incase you want to turn off logging, put this to false",
       "value": "False"
-    },
-    "QUOTES_API_TOKEN": {
-      "description": "Enhance ur text to sticker. Get your own API token from http://antiddos.systems.",
-      "required": false
     },
     "DEEZER_ARL_TOKEN": {
       "description": "Put your Deezer ARL token here.",
@@ -106,19 +67,7 @@
     },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module.",
-      "value": "False"
-    },
-    "YOUTUBE_API_KEY": {
-      "description": "YouTube Data API Key for .yt command. Get from https://console.cloud.google.com",
-      "required": false
-    },
-    "OCR_SPACE_API_KEY": {
-      "description": "OCR API Key for .ocr command. Get from https://ocr.space/ocrapi",
-      "required": false
-    },
-    "REM_BG_API_KEY": {
-      "description": "API Key for .rbg command. Get from https://www.remove.bg/api",
-      "required": false
+      "value": "True"
     },
     "ANTI_SPAMBOT": {
       "description": "Kicks spambots from groups after they join. [Requires admin powers in groups to kick.]",
@@ -128,29 +77,9 @@
       "description": "Report spambots to @admins in groups after they join, just in case when you don't have admin powers to kick that shit yourself.",
       "value": "False"
     },
-    "TEMP_DOWNLOAD_DIRECTORY": {
-      "description": "Download location for many modules (GDrive, .download etc..)",
-      "value": "./downloads/"
-    },
     "CLEAN_WELCOME": {
       "description": "When a new person joins, the old welcome message is deleted.",
       "value": "True"
-    },
-    "LASTFM_API": {
-      "description": "API Key for Last.FM module. [Get one from - https://www.last.fm/api/account/create]",
-      "required": false
-    },
-    "LASTFM_SECRET": {
-      "description": "SECRET Key for Last.FM module. [Get one from - https://www.last.fm/api/account/create]",
-      "required": false
-    },
-    "LASTFM_USERNAME": {
-      "description": "Last.FM Username",
-      "required": false
-    },
-    "LASTFM_PASSWORD": {
-      "description": "Last.FM Password",
-      "required": false
     },
     "BIO_PREFIX": {
       "description": "Prefix for Last.FM Module Bio.",
@@ -158,11 +87,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default profile bio.",
-      "value": "Live, Love, Life",
-      "required": false
-    },
-    "SS_LAYER_KEY": {
-      "description": "Key for screencap modules. get it from https://screenshotlayer.com/product.",
+      "value": "Wibu Is My Life.",
       "required": false
     },
     "ALIVE_NAME": {
@@ -173,14 +98,6 @@
       "description": "Your client_secret.json.",
       "required": false
     },
-    "LYDIA_API_KEY": {
-      "description": "This Module Needs CoffeeHouse API to work. so Join https://telegram.dog/IntellivoidDev and send #activateapi and follow instructions.",
-      "required": false
-    },
-    "GENIUS_ACCESS_TOKEN": {
-      "description": "Client Access Token from https://genius.com/api-clients.",
-      "required": false
-    },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
       "required": false
@@ -189,30 +106,9 @@
       "description": "Set this in order to make the gitupload work. you can look https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line to assist you.",
       "required": false
     },
-    "GENIUS_API_TOKEN": {
-      "description": "Get this value from https://genius.com/developers.",
-      "required": false 
-    },
-    "QUOTES_API_TOKEN": {
-      "description": "enhance chat to sticker like quotly. Get this API from http://antiddos.systems.",
-      "required": false
-    },
-    "TERM_ALIAS": {
-      "description": "set alias name for term cmd",
-      "required": false
-    },  	
-    "BITLY_TOKEN": {
-      "description": "Your Bit.ly API key, get it from 'https://bitly.com/a/sign_up'",
-      "value": "YOUR TOKEN",
-      "required": false
-    },
     "LOGSPAMMER": {
       "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
       "value": "True"
-    },
-    "LYDIA_API_KEY": {
-      "description": "This Module Needs CoffeeHouse API to work. so Join https://telegram.dog/IntellivoidDev and send #activateapi and follow instructions.",
-      "required": false
     },
     "WATCH_COUNTRY": {
       "description": "Country code for justwatch.com",
