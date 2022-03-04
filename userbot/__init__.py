@@ -124,8 +124,8 @@ OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", "92ff77855388957")
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "2rGZWVa6GzrXvACMuojvRpju")
  
 # Chrome Driver and Headless Google Chrome Binaries
-CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
-GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
+CHROME_DRIVER = os.environ.get("CHROME_DRIVER", "/usr/bin/chromedriver")
+GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", "/usr/bin/chromium-browser")
  
 # OpenWeatherMap API Key
 OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", "5ed2fcba931692ec6bd0a8a3f8d84936")
@@ -188,7 +188,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY",
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "wibumylife-ubot")
  
 # JustWatch Country
-WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", None)
+WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "ID")
  
 # Setting Up CloudMail.ru and MEGA.nz extractor binaries,
 # and giving them correct perms to work properly.
