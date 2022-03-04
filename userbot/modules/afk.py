@@ -156,29 +156,23 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s` ago"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(
-                        f"{str(choice(AFKSTR))}\n"
-                        f"\n\nI'm AFK right now since {afk_since}"
-                        f"\nReason: `{AFKREASON}`"
-                    )
+                  await mention.reply(f"{str(choice(AFKSTR))}"
+                    await mention.reply(f"**I'm not available right now.** (Since **{afk_since}**).\
+                        \nReason: `{AFKREASON}`")
                 else:
-                    await sender.reply(
-                        f"Sorry, but [{user.first_name}](tg://user?id={user.id}) is AFK!"
-                    )
+                    await mention.reply(f"**I'm not available right now.** (Since **{afk_since}**).\
+                        \n**Please come back later**")
                 USERS.update({mention.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(
-                            f"**As I said, my Mastor is not online since** {afk_since}.\
-                        \n**Leave your Message here and I'll go back soon..**\
-                            \nAFK Reason: `{AFKREASON}`"
-                        )
+                        await mention.reply(f"{str(choice(AFKSTR))}"
+                        await mention.reply(f"**I'm still not available right now.** (Since **{afk_since}**).\
+                            \nReason: `{AFKREASON}`")
                     else:
-                        await sender.reply(
-                            f"Sorry, but [{user.first_name}](tg://user?id={user.id}) is AFK!"
-                        )
+                        await mention.reply(f"**I'm not available right now.** (Since **{afk_since}**).\
+                        \n**Please come back later**")
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
                 else:
@@ -242,35 +236,28 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)}s` ago"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(
-                        f"{str(choice(AFKSTR))}\n"
-                        f"\n\nI'm AFK right now since {afk_since}"
-                        f"\nReason: `{AFKREASON}`"
-                    )
+                    await mention.reply(f"{str(choice(AFKSTR))}"
+                    await sender.reply(f"**I'm not available right now.** (Since **{afk_since}**).\
+                        \nReason: `{AFKREASON}`")
                 else:
-                    await sender.reply(
-                        f"Sorry, but [{user.first_name}](tg://user?id={user.id}) is AFK!"
-                    )
+                    await sender.reply(f"**I'm not available right now.** (Since **{afk_since}**).\
+                        \n**Please come back later**")
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(
-                            f"**As I said, my Mastor is not online since** {afk_since}.\
-                        \n**Leave your Message here and I'll go back soon..**\
-                            \nAFK Reason: `{AFKREASON}`"
-                        )
+                        await mention.reply(f"{str(choice(AFKSTR))}"
+                        await sender.reply(f"**I'm still not available right now.** (Since **{afk_since}**).\
+                            \nReason: `{AFKREASON}`")
                     else:
-                        await sender.reply(
-                            f"Sorry, but [{user.first_name}](tg://user?id={user.id}) is AFK!"
-                        )
+                        await sender.reply(f"**I'm not available right now.** (Since **{afk_since}**).\
+                        \n**Please come back later**")
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
                 else:
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
-
 CMD_HELP.update(
     {
         "afk": ">`.off` [Optional Reason]"
