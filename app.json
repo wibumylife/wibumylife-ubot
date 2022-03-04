@@ -32,7 +32,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-      "value": "Check Di Heroku Dashboard Mu",
+      "value": "",
       "required": true
     },
     "BOTLOG_CHATID": {
