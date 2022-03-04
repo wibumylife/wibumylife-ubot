@@ -1,22 +1,6 @@
 {
-  "name": "Project wibumylife-ubot bot Telegram",
+  "name": "wibumylife-ubot",
   "description": "wibumylife-ubot running on Python 3.8+ with an sqlalchemy database.",
-  "logo": "https://telegra.ph/file/60e950dde25f7de86bcec.jpg",
-  "keywords": [
-    "telegram",
-    "userbot",
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/wibumylife/wibumylife-ubot",
-  "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
-  "success_url": "https://t.me/PPE_Support",
-  "stack": "container",
-  "env": {
-{
-  "name": "Kyy-Userbot",
-  "description": "USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/276d22aac9f400898cd27.jpg",
   "keywords": [
     "telegram",
