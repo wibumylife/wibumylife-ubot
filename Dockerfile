@@ -1,7 +1,7 @@
 FROM wibumylife/wibumylife-ubot:buster
 
 # Clone repo and prepare working directory
-RUN git clone -b sql-extended https://github.com/wibumylife/OUBnew /OUBnew
+RUN git clone -b sql-extended https://github.com/fortifying/OUBnew /OUBnew
 RUN chmod 777 /OUBnew
 WORKDIR /OUBnew
  
