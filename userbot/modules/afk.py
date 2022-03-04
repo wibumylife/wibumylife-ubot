@@ -172,7 +172,7 @@ async def mention_afk(mention):
                         f"\n\nI'm still not available right now.** (Since **{afk_since}**)"
                         f"\nReason: `{AFKREASON}`")
                     else:
-                        await mention.reply(f"**f"{str(choice(AFKSTR))}\n"
+                        await mention.reply(f"{str(choice(AFKSTR))}\n"
                         f"\n\nI'm still not available right now.** (Since **{afk_since}**)"
                         f"\nPlease come back later")
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
