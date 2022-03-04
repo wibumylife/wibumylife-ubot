@@ -1,4 +1,4 @@
-FROM python:3.9.1-buster
+FROM wibumylife/wibumylife-ubot:buster
 
 WORKDIR /root/userbot
 
