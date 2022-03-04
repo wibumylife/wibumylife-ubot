@@ -1,6 +1,6 @@
 {
-  "name": "Project OUBnew-Fortizer bot Telegram",
-  "description": "OUB fortizer running on Python 3.8+ with an sqlalchemy database.",
+  "name": "Project wibumylife-ubot bot Telegram",
+  "description": "wibumylife-ubot running on Python 3.8+ with an sqlalchemy database.",
   "logo": "https://telegra.ph/file/60e950dde25f7de86bcec.jpg",
   "keywords": [
     "telegram",
@@ -101,10 +101,6 @@
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
       "value": "Medan",
-      "required": false
-    },
-    "GITHUB_ACCESS_TOKEN": {
-      "description": "Set this in order to make the gitupload work. you can look https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line to assist you.",
       "required": false
     },
     "LOGSPAMMER": {
