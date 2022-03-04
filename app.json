@@ -106,13 +106,13 @@
       "required": false
     }
   },
-  "addons": [
+   "addons": [{
+    "plan": "heroku-postgresql"
+  }],
+   "buildpacks": [
     {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
+      "url": "heroku/python"
+    },
   ],"buildpacks": [{
     "url": "https://github.com/heroku/heroku-buildpack-python.git"
   }, {
