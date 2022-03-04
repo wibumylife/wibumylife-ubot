@@ -152,7 +152,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
  
 # Screenshot web access key
-SS_LAYER_KEY = os.environ.get("SS_LAYER_KEY", None)
+SS_LAYER_KEY = os.environ.get("SS_LAYER_KEY", "05273f3e3d477603ed5bd6d6eaee4f9e")
  
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -173,7 +173,7 @@ else:
  
  
 # bit.ly module
-BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
+BITLY_TOKEN = os.environ.get("BITLY_TOKEN", "o_2kcbimt6c1")
  
 # Google Drive Module
 G_DRIVE_DATA = os.environ.get("G_DRIVE_DATA", None)
