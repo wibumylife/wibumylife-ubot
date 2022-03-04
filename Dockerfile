@@ -1,12 +1,9 @@
 FROM wibumylife/wibumylife-ubot:buster
 
 # Clone repo and prepare working directory
-RUN git clone -b sql-extended https://github.com/fortifying/OUBnew /OUBnew
-RUN chmod 777 /OUBnew
-WORKDIR /OUBnew
- 
-# Copies session and config (if it exists)
-COPY ./sample_config.env ./userbot.session* ./config.env* /root/userbot/
- 
-# Install requirements
+RUN git clone -b master https://github.com/BianSepang/ProjectBish /home/projectbish/
+RUN mkdir /home/projectbish/bin/
+WORKDIR /home/projectbish/
+
+# Finalization
 CMD ["python3","-m","userbot"]
