@@ -4,8 +4,8 @@ WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
 COPY . .
-COPY netrc /root/netrc
-RUN chmod 600 /usr/src/app/netrc
+COPY netrc /root/userbot
+RUN chmod 600 /usr/src/app/userbot
 RUN chmod +x aria.sh
 
 CMD ["bash","start.sh"]
