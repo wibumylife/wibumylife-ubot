@@ -100,6 +100,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
+      "value": "Medan",
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
