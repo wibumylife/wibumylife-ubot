@@ -71,12 +71,12 @@ BOTLOG = sb(os.environ.get("BOTLOG", "False"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
  
 # Genius lyrics get this value from https://genius.com/developers both has same values
-GENIUS_API_TOKEN = os.environ.get("GENIUS", None)
+GENIUS_API_TOKEN = os.environ.get("GENIUS", "vDhUmdo_ufwIvEymMeMY65IedjWaVm1KPupdx0L")
 # Genius lyrics get this value from https://genius.com/developers both has same values
-GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
+GENIUS = os.environ.get("GENIUS_API_TOKEN", "vDhUmdo_ufwIvEymMeMY65IedjWaVm1KPupdx0L")
  
 # Quotes API Token
-QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
+QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", "33273f18-4a0d-4a76-8d78-a16faa002375")
  
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -118,34 +118,34 @@ if G_BAN_LOGGER_GROUP:
 DB_URI = os.environ.get("DATABASE_URL", None)
  
 # OCR API key
-OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
+OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", "92ff77855388957")
  
 # remove.bg API key
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "2rGZWVa6GzrXvACMuojvRpju")
  
 # Chrome Driver and Headless Google Chrome Binaries
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
 GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
  
 # OpenWeatherMap API Key
-OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
-WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", None)
+OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", "5ed2fcba931692ec6bd0a8a3f8d84936")
+WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", "Medan")
  
 # Lydia API
-LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
+LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", "632740cd2395c73b58275b54ff57a02b607a9f8a4bbc0e37a24e7349a098f95eaa6569e22e2d90093e9c1a9cc253380a218bfc2b7af2e407494502f6fb76f97e")
  
 # Anti Spambot Config
 ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
 ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
  
 # Youtube API key
-YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
+YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg")
  
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
  
 # Time & Date - Country and Time Zone
-COUNTRY = str(os.environ.get("COUNTRY", ""))
+COUNTRY = str(os.environ.get("COUNTRY", "ID"))
 TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
  
 # Clean Welcome
@@ -158,7 +158,7 @@ SS_LAYER_KEY = os.environ.get("SS_LAYER_KEY", None)
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
  
-LASTFM_API = os.environ.get("LASTFM_API", None)
+LASTFM_API = os.environ.get("LASTFM_API", "73d42d9c93626709dc2679d491d472bf")
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
 LASTFM_USERNAME = os.environ.get("LASTFM_USERNAME", None)
 LASTFM_PASSWORD_PLAIN = os.environ.get("LASTFM_PASSWORD", None)
@@ -250,8 +250,8 @@ with bot:
         quit(1)
  
 # Userbot ver/tag/codename
-OUBnew_VER = "4.5"
-CODENAME = "Sicherheit"
+OUBnew_VER = "8.5"
+CODENAME = "loli-userbot"
  
 # Global Variables
 COUNT_MSG = 0
