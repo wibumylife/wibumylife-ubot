@@ -177,7 +177,7 @@ async def mention_afk(mention):
                         )
                     else:
                         await sender.reply(
-                            f"Sorry, but [{user.first_name}](tg://user?id={user.id})(Since **{afk_since}**) is AFK!"
+                            f"Sorry, but [{user.first_name}](tg://user?id={user.id}) is AFK!"
                         )
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
@@ -263,7 +263,7 @@ async def afk_on_pm(sender):
                         )
                     else:
                         await sender.reply(
-                            f"Sorry, but [{user.first_name}](tg://user?id={user.id})(Since **{afk_since}**) is AFK!"
+                            f"Sorry, but [{user.first_name}](tg://user?id={user.id}) is AFK!"
                         )
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
