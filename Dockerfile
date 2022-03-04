@@ -27,8 +27,5 @@ COPY . .
 # Install dependencies
 RUN pip3 install --upgrade pip
 
-# Install Bot Deps and stuff
-RUN make install
-
 # Run the bot
 CMD ["python3", "-m", "userbot"]
