@@ -1,6 +1,5 @@
-FROM wibumylife/wibumylife-ubot:buster
+FROM python:3.9.1-buster
 
-RUN mkdir /root/userbot/.bin
 WORKDIR /root/userbot
 
 COPY . .
