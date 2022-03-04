@@ -82,7 +82,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", "33273f18-4a0d-4a76-8d78-a
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
  
 # Heroku Credentials for updater.
-HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))
+HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "True"))
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
  
