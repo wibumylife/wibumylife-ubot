@@ -26,7 +26,7 @@
 ## NOT THE BEST ONE, BUT HERE YOU GO
 
 ## Easy way to deploy
-[![Deploy](https://telegra.ph/file/008d8a88e29bd8ed9ece9.png)](https://dashboard.heroku.com/new?template=https://github.com/wibumylife/wibumylife-ubot)
+[![Deploy](https://telegra.ph/file/008d8a88e29bd8ed9ece9.png)](https://heroku.com/deploy?template=https://github.com/wibumylife/wibumylife-ubot)
 
 
 <p align="center">&nbsp;</p>
