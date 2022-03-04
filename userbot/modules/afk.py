@@ -158,8 +158,7 @@ async def mention_afk(mention):
                 if AFKREASON:
                     await mention.reply(f"{str(choice(AFKSTR))}\n"
                         f"\n\nI'm not available right now.** (Since **{afk_since}**)"
-                        f"\nReason: `{AFKREASON}`"
-                    ))
+                        f"\nReason: `{AFKREASON}`")
                 else:
                     await mention.reply(f"{str(choice(AFKSTR))}\n"
                         f"\n\nI'm not available right now.** (Since **{afk_since}**)"
