@@ -28,6 +28,7 @@
     },
     "HEROKU_APP_NAME": {
       "description": "FILL THE VALUE, SAME AS THAT YOU CREATE IN APP NAME!.",
+      "value": "Check Di Heroku Dashboard Mu",
       "required": true
     },
     "HEROKU_API_KEY": {
