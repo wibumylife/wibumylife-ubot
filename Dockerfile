@@ -1,11 +1,11 @@
-FROM wibumylife/wibumylife-ubot:buster
+FROM priiiiyo/mega-sdk-python:latest
 
-WORKDIR /root/userbot
+WORKDIR /usr/src/app
+RUN chmod 777 /usr/src/app
 
 COPY . .
+COPY netrc /root/netrc
+RUN chmod 600 /usr/src/app/netrc
+RUN chmod +x aria.sh
 
-RUN pip3 install --upgrade pip setuptools
-
-RUN pip install -U -r requirements.txt
-
-CMD ["python3", "-m", "userbot"]
+CMD ["bash","start.sh"]
