@@ -96,18 +96,18 @@ async def bot_support(wannahelp):
 
 @register(outgoing=True, pattern="^.contributor$")
 async def contributor(e):
-    await e.edit("Check out who [Contribute](https://github.com/fortifying/OUBnew/graphs/contributors) to this bot")
+    await e.edit("Check out who [Contribute](https://github.com/None/graphs/contributors) to this bot")
 
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
-    await e.edit("[Heinz Der Flugel](https://t.me/fortifying)")
+    await e.edit("[𝚉𝙰𝚈𝚈](https://t.me/wibumylife)")
 
 
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[OUBnew-fortizer README.md file](https://github.com/fortifying/OUBnew/blob/sql-extended/README.md)"
+        "\n[OUBnew-fortizer README.md file](https://github.com/None/tree/sql-extended/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-Google-Drive-04-03)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -135,7 +135,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "Click [here](https://github.com/fortifying/OUBnew) to open OUBnew-fortizer's GitHub page."
+        "Click [here](https://github.com/None/tree/sql-extended/) to open OUBnew-fortizer's GitHub page."
     )
 
     
@@ -143,7 +143,7 @@ async def repo_is_here(wannasee):
 async def myrepo_is_here(wannaseeme):
     """ For .myrepo command, just returns the repo URL. """
     await wannaseeme.edit(
-        f'Click [here](https://github.com/{GIT_REPO_NAME}/tree/sql-extended/) to open {DEFAULTUSER}`s GitHub page'
+        f'Click [here](https://github.com/None/tree/sql-extended/) to open {DEFAULTUSER}`s GitHub page'
     )
 
 @register(outgoing=True, pattern="^.raw$")
