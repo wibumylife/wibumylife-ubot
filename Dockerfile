@@ -1,4 +1,4 @@
-FROM wibumylife/wibumylife-ubot:buster
+FROM biansepang/weebproject:buster
 
 RUN git clone -b wibumylife-ubot https://github.com/wibumylife/wibumylife-ubot /root/userbot
 RUN mkdir /root/userbot/.bin
